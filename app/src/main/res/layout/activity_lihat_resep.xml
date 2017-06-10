@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5DEB3"
+    tools:context="com.dapursulawesi.dapursulawesi.LihatResep" >
+
+    <TextView
+        android:id="@+id/textViewNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="104dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewNo"
+        android:layout_below="@+id/textViewNo"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewAsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNama"
+        android:layout_below="@+id/textViewNama"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewBahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAsal"
+        android:layout_below="@+id/textViewAsal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewCara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewBahan"
+        android:layout_below="@+id/textViewBahan"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/TextViewCara2" />
+
+    <TextView
+        android:id="@+id/TextViewCara2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCara"
+        android:layout_alignBottom="@+id/textViewCara"
+        android:layout_alignLeft="@+id/TextViewAsal2"
+        android:text="Cara Membuat :" />
+
+    <TextView
+        android:id="@+id/TextViewAsal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewBahan"
+        android:layout_alignBottom="@+id/textViewBahan"
+        android:layout_alignLeft="@+id/TextViewBahan2"
+        android:text="Bahan-Bahan :" />
+
+    <TextView
+        android:id="@+id/TextViewBahan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewAsal"
+        android:layout_alignBottom="@+id/textViewAsal"
+        android:layout_alignLeft="@+id/TextViewNama2"
+        android:text="Asal Daerah :" />
+
+    <TextView
+        android:id="@+id/TextViewNama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewNama"
+        android:layout_alignBottom="@+id/textViewNama"
+        android:layout_alignLeft="@+id/TextViewNo2"
+        android:text="Nama Masakan :" />
+
+    <TextView
+        android:id="@+id/TextViewNo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewNama"
+        android:layout_alignParentLeft="true"
+        android:text="No. Masakan :" />
+
+</RelativeLayout>

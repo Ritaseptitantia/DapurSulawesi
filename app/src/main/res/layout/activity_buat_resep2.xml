@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5DEB3"
+    tools:context="com.dapursulawesi.dapursulawesi.BuatResep">
+
+
+    <EditText
+        android:id="@+id/editTextNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNo"
+        android:layout_below="@+id/textViewNo" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="No. Masakan :" />
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNo"
+        android:layout_below="@+id/editTextNo"
+        android:layout_marginTop="10dp"
+        android:text="Nama Masakan :" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNama"
+        android:layout_below="@+id/textViewNama" />
+
+    <TextView
+        android:id="@+id/textViewAsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNama"
+        android:layout_below="@+id/editTextNama"
+        android:layout_marginTop="10dp"
+        android:text="Asal Daerah :" />
+
+    <EditText
+        android:id="@+id/editTextAsal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAsal"
+        android:layout_below="@+id/textViewAsal" />
+
+    <TextView
+        android:id="@+id/textViewBahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextAsal"
+        android:layout_below="@+id/editTextAsal"
+        android:layout_marginTop="10dp"
+        android:text="Bahan-Bahan :" />
+
+    <EditText
+        android:id="@+id/editTextBahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewBahan"
+        android:layout_below="@+id/textViewBahan" />
+
+    <TextView
+        android:id="@+id/textViewCara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextBahan"
+        android:layout_below="@+id/editTextBahan"
+        android:layout_marginTop="10dp"
+        android:text="Cara Membuat :" />
+
+    <EditText
+        android:id="@+id/editTextCara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCara"
+        android:layout_below="@+id/textViewCara" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
